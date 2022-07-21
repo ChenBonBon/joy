@@ -1,7 +1,7 @@
 {
   "name": "joy",
   "private": true,
-  "version": "0.0.14",
+  "version": "0.0.15",
   "type": "module",
   "files": [
     "dist"
@@ -38,7 +38,6 @@
   "peerDependencies": {
     "antd": "4.21.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "rollup": "^2.77.0"
+    "react-dom": "17.0.2"
   }
 }
