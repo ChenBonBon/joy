@@ -1,5 +1,10 @@
-import { Button } from "antd";
+import { Button, ButtonProps } from "antd";
+import React from "react";
 
-export default function JoyButton() {
-  return <Button type="primary">Click</Button>;
+export type JoyButtonProps = ButtonProps & {
+  color: string;
+};
+
+export default function JoyButton(props: JoyButtonProps) {
+  return <Button {...props} />;
 }

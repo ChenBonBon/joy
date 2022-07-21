@@ -1,23 +1,23 @@
-import { Button as nr } from "antd";
 import we from "react";
-var Ce = { exports: {} }, D = {};
+import { Button as nr } from "antd";
+var xe = { exports: {} }, D = {};
 /*
 object-assign
 (c) Sindre Sorhus
 @license MIT
 */
 var z, je;
-function xe() {
+function Ce() {
   if (je)
     return z;
   je = 1;
-  var _ = Object.getOwnPropertySymbols, C = Object.prototype.hasOwnProperty, O = Object.prototype.propertyIsEnumerable;
+  var p = Object.getOwnPropertySymbols, x = Object.prototype.hasOwnProperty, O = Object.prototype.propertyIsEnumerable;
   function T(h) {
     if (h == null)
       throw new TypeError("Object.assign cannot be called with null or undefined");
     return Object(h);
   }
-  function x() {
+  function C() {
     try {
       if (!Object.assign)
         return !1;
@@ -31,23 +31,23 @@ function xe() {
       });
       if (l.join("") !== "0123456789")
         return !1;
-      var p = {};
+      var _ = {};
       return "abcdefghijklmnopqrst".split("").forEach(function(f) {
-        p[f] = f;
-      }), Object.keys(Object.assign({}, p)).join("") === "abcdefghijklmnopqrst";
+        _[f] = f;
+      }), Object.keys(Object.assign({}, _)).join("") === "abcdefghijklmnopqrst";
     } catch {
       return !1;
     }
   }
-  return z = x() ? Object.assign : function(h, m) {
-    for (var c, l = T(h), p, f = 1; f < arguments.length; f++) {
+  return z = C() ? Object.assign : function(h, m) {
+    for (var c, l = T(h), _, f = 1; f < arguments.length; f++) {
       c = Object(arguments[f]);
       for (var b in c)
-        C.call(c, b) && (l[b] = c[b]);
-      if (_) {
-        p = _(c);
-        for (var g = 0; g < p.length; g++)
-          O.call(c, p[g]) && (l[p[g]] = c[p[g]]);
+        x.call(c, b) && (l[b] = c[b]);
+      if (p) {
+        _ = p(c);
+        for (var g = 0; g < _.length; g++)
+          O.call(c, _[g]) && (l[_[g]] = c[_[g]]);
       }
     }
     return l;
@@ -65,22 +65,22 @@ var Pe;
 function ar() {
   if (Pe)
     return D;
-  Pe = 1, xe();
-  var _ = we, C = 60103;
+  Pe = 1, Ce();
+  var p = we, x = 60103;
   if (D.Fragment = 60107, typeof Symbol == "function" && Symbol.for) {
     var O = Symbol.for;
-    C = O("react.element"), D.Fragment = O("react.fragment");
+    x = O("react.element"), D.Fragment = O("react.fragment");
   }
-  var T = _.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, x = Object.prototype.hasOwnProperty, h = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function m(c, l, p) {
+  var T = p.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, C = Object.prototype.hasOwnProperty, h = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function m(c, l, _) {
     var f, b = {}, g = null, w = null;
-    p !== void 0 && (g = "" + p), l.key !== void 0 && (g = "" + l.key), l.ref !== void 0 && (w = l.ref);
+    _ !== void 0 && (g = "" + _), l.key !== void 0 && (g = "" + l.key), l.ref !== void 0 && (w = l.ref);
     for (f in l)
-      x.call(l, f) && !h.hasOwnProperty(f) && (b[f] = l[f]);
+      C.call(l, f) && !h.hasOwnProperty(f) && (b[f] = l[f]);
     if (c && c.defaultProps)
       for (f in l = c.defaultProps, l)
         b[f] === void 0 && (b[f] = l[f]);
-    return { $$typeof: C, type: c, key: g, ref: w, props: b, _owner: T.current };
+    return { $$typeof: x, type: c, key: g, ref: w, props: b, _owner: T.current };
   }
   return D.jsx = m, D.jsxs = m, D;
 }
@@ -95,31 +95,31 @@ var H = {};
  */
 var Te;
 function ir() {
-  return Te || (Te = 1, function(_) {
+  return Te || (Te = 1, function(p) {
     process.env.NODE_ENV !== "production" && function() {
-      var C = we, O = xe(), T = 60103, x = 60106;
-      _.Fragment = 60107;
-      var h = 60108, m = 60114, c = 60109, l = 60110, p = 60112, f = 60113, b = 60120, g = 60115, w = 60116, $ = 60121, X = 60122, Z = 60117, Q = 60129, ee = 60131;
+      var x = we, O = Ce(), T = 60103, C = 60106;
+      p.Fragment = 60107;
+      var h = 60108, m = 60114, c = 60109, l = 60110, _ = 60112, f = 60113, b = 60120, g = 60115, w = 60116, $ = 60121, X = 60122, Z = 60117, Q = 60129, ee = 60131;
       if (typeof Symbol == "function" && Symbol.for) {
         var v = Symbol.for;
-        T = v("react.element"), x = v("react.portal"), _.Fragment = v("react.fragment"), h = v("react.strict_mode"), m = v("react.profiler"), c = v("react.provider"), l = v("react.context"), p = v("react.forward_ref"), f = v("react.suspense"), b = v("react.suspense_list"), g = v("react.memo"), w = v("react.lazy"), $ = v("react.block"), X = v("react.server.block"), Z = v("react.fundamental"), v("react.scope"), v("react.opaque.id"), Q = v("react.debug_trace_mode"), v("react.offscreen"), ee = v("react.legacy_hidden");
+        T = v("react.element"), C = v("react.portal"), p.Fragment = v("react.fragment"), h = v("react.strict_mode"), m = v("react.profiler"), c = v("react.provider"), l = v("react.context"), _ = v("react.forward_ref"), f = v("react.suspense"), b = v("react.suspense_list"), g = v("react.memo"), w = v("react.lazy"), $ = v("react.block"), X = v("react.server.block"), Z = v("react.fundamental"), v("react.scope"), v("react.opaque.id"), Q = v("react.debug_trace_mode"), v("react.offscreen"), ee = v("react.legacy_hidden");
       }
       var re = typeof Symbol == "function" && Symbol.iterator, Se = "@@iterator";
-      function ke(e) {
+      function Ae(e) {
         if (e === null || typeof e != "object")
           return null;
         var r = re && e[re] || e[Se];
         return typeof r == "function" ? r : null;
       }
-      var S = C.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+      var S = x.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
       function R(e) {
         {
           for (var r = arguments.length, t = new Array(r > 1 ? r - 1 : 0), n = 1; n < r; n++)
             t[n - 1] = arguments[n];
-          Ae("error", e, t);
+          ke("error", e, t);
         }
       }
-      function Ae(e, r, t) {
+      function ke(e, r, t) {
         {
           var n = S.ReactDebugCurrentFrame, o = n.getStackAddendum();
           o !== "" && (r += "%s", t = t.concat([o]));
@@ -131,7 +131,7 @@ function ir() {
       }
       var De = !1;
       function Ie(e) {
-        return !!(typeof e == "string" || typeof e == "function" || e === _.Fragment || e === m || e === Q || e === h || e === f || e === b || e === ee || De || typeof e == "object" && e !== null && (e.$$typeof === w || e.$$typeof === g || e.$$typeof === c || e.$$typeof === l || e.$$typeof === p || e.$$typeof === Z || e.$$typeof === $ || e[0] === X));
+        return !!(typeof e == "string" || typeof e == "function" || e === p.Fragment || e === m || e === Q || e === h || e === f || e === b || e === ee || De || typeof e == "object" && e !== null && (e.$$typeof === w || e.$$typeof === g || e.$$typeof === c || e.$$typeof === l || e.$$typeof === _ || e.$$typeof === Z || e.$$typeof === $ || e[0] === X));
       }
       function Ye(e, r, t) {
         var n = r.displayName || r.name || "";
@@ -148,9 +148,9 @@ function ir() {
         if (typeof e == "string")
           return e;
         switch (e) {
-          case _.Fragment:
+          case p.Fragment:
             return "Fragment";
-          case x:
+          case C:
             return "Portal";
           case m:
             return "Profiler";
@@ -169,7 +169,7 @@ function ir() {
             case c:
               var t = e;
               return te(t._context) + ".Provider";
-            case p:
+            case _:
               return Ye(e, e.render, "ForwardRef");
             case g:
               return y(e.type);
@@ -335,7 +335,7 @@ function ir() {
         } finally {
           B = !1, V.current = u, We(), Error.prepareStackTrace = o;
         }
-        var A = e ? e.displayName || e.name : "", ye = A ? W(A) : "";
+        var k = e ? e.displayName || e.name : "", ye = k ? W(k) : "";
         return typeof e == "function" && L.set(e, ye), ye;
       }
       function ve(e, r, t) {
@@ -360,7 +360,7 @@ function ir() {
         }
         if (typeof e == "object")
           switch (e.$$typeof) {
-            case p:
+            case _:
               return ve(e.render);
             case g:
               return N(e.type, r, t);
@@ -499,7 +499,7 @@ function ir() {
         }
       }
       var G = S.ReactCurrentOwner, Ee = S.ReactDebugCurrentFrame;
-      function k(e) {
+      function A(e) {
         if (e) {
           var r = e._owner, t = N(e.type, e._source, r ? r.type : null);
           Ee.setExtraStackFrame(t);
@@ -557,7 +557,7 @@ Check the top-level render call using <` + t + ">.");
             return;
           Re[t] = !0;
           var n = "";
-          e && e._owner && e._owner !== G.current && (n = " It was passed a child from " + y(e._owner.type) + "."), k(e), R('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', t, n), k(null);
+          e && e._owner && e._owner !== G.current && (n = " It was passed a child from " + y(e._owner.type) + "."), A(e), R('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', t, n), A(null);
         }
       }
       function Oe(e, r) {
@@ -572,7 +572,7 @@ Check the top-level render call using <` + t + ">.");
           else if (K(e))
             e._store && (e._store.validated = !0);
           else if (e) {
-            var o = ke(e);
+            var o = Ae(e);
             if (typeof o == "function" && o !== e.entries)
               for (var u = o.call(e), i; !(i = u.next()).done; )
                 K(i.value) && be(i.value, r);
@@ -587,7 +587,7 @@ Check the top-level render call using <` + t + ">.");
           var t;
           if (typeof r == "function")
             t = r.propTypes;
-          else if (typeof r == "object" && (r.$$typeof === p || r.$$typeof === g))
+          else if (typeof r == "object" && (r.$$typeof === _ || r.$$typeof === g))
             t = r.propTypes;
           else
             return;
@@ -607,11 +607,11 @@ Check the top-level render call using <` + t + ">.");
           for (var r = Object.keys(e.props), t = 0; t < r.length; t++) {
             var n = r[t];
             if (n !== "children" && n !== "key") {
-              k(e), R("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", n), k(null);
+              A(e), R("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", n), A(null);
               break;
             }
           }
-          e.ref !== null && (k(e), R("Invalid attribute `ref` supplied to `React.Fragment`."), k(null));
+          e.ref !== null && (A(e), R("Invalid attribute `ref` supplied to `React.Fragment`."), A(null));
         }
       }
       function me(e, r, t, n, o, u) {
@@ -633,15 +633,15 @@ Check the top-level render call using <` + t + ">.");
             if (j !== void 0)
               if (n)
                 if (Array.isArray(j)) {
-                  for (var A = 0; A < j.length; A++)
-                    Oe(j[A], e);
+                  for (var k = 0; k < j.length; k++)
+                    Oe(j[k], e);
                   Object.freeze && Object.freeze(j);
                 } else
                   R("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
               else
                 Oe(j, e);
           }
-          return e === _.Fragment ? Ze(d) : Xe(d), d;
+          return e === p.Fragment ? Ze(d) : Xe(d), d;
         }
       }
       function Qe(e, r, t) {
@@ -651,18 +651,17 @@ Check the top-level render call using <` + t + ">.");
         return me(e, r, t, !1);
       }
       var rr = er, tr = Qe;
-      _.jsx = rr, _.jsxs = tr;
+      p.jsx = rr, p.jsxs = tr;
     }();
   }(H)), H;
 }
-(function(_) {
-  process.env.NODE_ENV === "production" ? _.exports = ar() : _.exports = ir();
-})(Ce);
-const or = Ce.exports.jsx;
-function cr() {
-  return /* @__PURE__ */ or(nr, {
-    type: "primary",
-    children: "Click"
+(function(p) {
+  process.env.NODE_ENV === "production" ? p.exports = ar() : p.exports = ir();
+})(xe);
+const or = xe.exports.jsx;
+function cr(p) {
+  return or(nr, {
+    ...p
   });
 }
 export {

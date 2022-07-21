@@ -1,13 +1,14 @@
 {
   "name": "joy",
   "private": true,
-  "version": "0.0.9",
+  "version": "0.0.10",
   "type": "module",
   "files": [
     "dist"
   ],
   "main": "dist/joy.umd.js",
   "module": "dist/joy.es.js",
+  "types": "dist/types/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/joy.es.js",
@@ -21,6 +22,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.3",
     "@types/node": "^18.0.6",
     "@types/react": "^17.0.47",
     "@types/react-dom": "^17.0.17",
@@ -29,6 +31,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "rimraf": "^3.0.2",
+    "tslib": "^2.4.0",
     "typescript": "^4.7.4",
     "vite": "^3.0.2"
   },
