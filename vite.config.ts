@@ -10,7 +10,6 @@ export default defineConfig({
       entry: path.resolve(__dirname, "packages/index.ts"),
       name: "joy",
       fileName: (format) => `joy.${format}.js`,
-      formats: ["es"],
     },
     rollupOptions: {
       external: ["react", "react-dom", "antd"],

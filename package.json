@@ -1,15 +1,17 @@
 {
   "name": "joy",
   "private": true,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "dist/joy.es.js",
+  "main": "dist/joy.umd.js",
+  "module": "dist/joy.es.js",
   "exports": {
     ".": {
-      "import": "./dist/joy.es.js"
+      "import": "./dist/joy.es.js",
+      "require": "./dist/joy.umd.js"
     }
   },
   "scripts": {
