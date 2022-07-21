@@ -1,10 +1,19 @@
 {
   "name": "joy",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "main": "dist/joy.umd.js",
   "module": "dist/joy.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/joy.es.js",
+      "require": "./dist/joy.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
