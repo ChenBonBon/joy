@@ -6,12 +6,10 @@
   "files": [
     "dist"
   ],
-  "main": "dist/joy.umd.js",
-  "module": "dist/joy.es.js",
+  "main": "dist/joy.es.js",
   "exports": {
     ".": {
-      "import": "./dist/joy.es.js",
-      "require": "./dist/joy.umd.js"
+      "import": "./dist/joy.es.js"
     }
   },
   "scripts": {
