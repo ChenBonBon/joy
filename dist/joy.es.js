@@ -1,6 +1,7 @@
 import * as q from "react";
 import le, { useLayoutEffect as sl, useEffect as Rt, useRef as Ke, createElement as ll, Component as Zo, useState as eu, useMemo as tu, useContext as ru } from "react";
 import { Button as cl } from "antd";
+import { Slider as mp } from "antd";
 import * as fl from "react-dom";
 import Ra from "react-dom";
 function Vr(t) {
@@ -9185,5 +9186,6 @@ pi.SizeContext = nc;
 pi.config = up;
 export {
   pp as Button,
-  pi as ConfigProvider
+  pi as ConfigProvider,
+  mp as Slider
 };
